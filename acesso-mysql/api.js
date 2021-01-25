@@ -1,0 +1,20 @@
+const db = require('./db')
+const categories = require('./categories')(db)
+const products = require('./products')(db)
+
+const test = async () => {
+    //await categories.create(['New category from api'])
+    //await categories.remove(4)
+    //await categories.update(3, ['Update from API'])
+    //const cats = await categories.findAll()
+    //console.log(cats)
+    //await products.addImage(3, ['img test', 'url'])
+    //const prods = await products.findAllByCategory(6)
+    //console.log(prods)
+    //const prods = await products.findAllPaginated({pageSize: 1, currentPage: 1})
+    //console.log(prods)
+    await products.updateCategories(2, [3,5])
+    //const prods = await products.findAllPaginated()
+    //console.log(prods)
+}
+test() 

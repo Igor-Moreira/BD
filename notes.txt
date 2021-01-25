@@ -1,0 +1,19 @@
+Cenário:
+- Categories: id, category
+- Products: id, product, price
+- Images: id, description, url
+
+- Category has many Products
+- Product has and belongs to many Categories
+- Product has many Images
+
+Categoy <> N:M <> Product
+Product 1:N Images
+
+--- Operations:
+- CRUD: everbody
+- search everthing product by one category
+- search one product > bring images ( or or at least the first)
+- paginate
+
+
